@@ -3,21 +3,60 @@
 }
 
 :root {
+  --size-header-div-padding: 1rem 1rem;
+  --clr-generated-color: #00ffff;
+  --size-button-fontsize: 0.75rem;
+  --size-output-padding-block: 1rem;
 }
 
 html {
-  font-family: ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   direction: ltr;
-  font-size: ;
+  font-size: 15px;
 }
 
 body {
   margin: 0;
-  height: ;
-  background-color: var(--page-background-color);
-  color: var(--page-text-color);
 }
 
-/* Fallbacks für manche Styles benutzen, S.13 unten */
+/*.....................................................................................All styles for the header */
 
-/* Füge media queries ein, S.15 unten*/
+header {
+  background-color: var(--clr-generated-color);
+}
+
+.header-div {
+  padding: var(--size-header-div-padding);
+}
+
+h1 {
+  margin-block: 0;
+}
+
+.the-buttons {
+  width: 300px;
+}
+
+button {
+  font-size: var(--size-button-fontsize);
+}
+
+.the-buttons > button:last-child:focus {
+  opacity: 0.25;
+}
+
+output {
+  display: block;
+  padding-block: var(--size-output-padding-block);
+}
+
+/*.............................................................................All styles for main */
+
+li {
+  background-color: var(--clr-generated-color);
+  margin-right: 1rem;
+}
+
+.delete-button {
+  display: inline;
+}
